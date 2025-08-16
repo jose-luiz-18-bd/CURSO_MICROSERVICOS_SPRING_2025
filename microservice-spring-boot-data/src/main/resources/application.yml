@@ -14,3 +14,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect # não necessita mais desta coonfiguração
     show-sql: false
+logging:
+  level:
+    br.com.zeluiz_dev: INFO
