@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: greeting-service
+management:  # ACTUATOR
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'  # ESPÕE TODOS OS ENDPOINT
+  endpoint:
+    health:
+      show-details: ALWAYS
+greeting-service:
+  greeting: "Hello"
+  default-value: "World!"
